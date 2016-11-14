@@ -39,9 +39,10 @@ get '/' do
     div id="footer"
       = render 'footer'
       | Copyright © #{year} #{author}
+
           a href="http://#{HIDDEN_SERVICE.hostname}" = HIDDEN_SERVICE.hostname
         
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/_bXyEqNH168" frameborder="0" allowfullscreen></iframe>
+         
           
 EOF
 end
