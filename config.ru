@@ -5,17 +5,5 @@ HIDDEN_SERVICE = Tor::HiddenService.new(
 )
 HIDDEN_SERVICE.start
 
-require 'sinatra'
-
-get '/' do
-  slim <<EOF
-    doctype html
-    html
-      head
-      body
-          a href="http://#{HIDDEN_SERVICE.hostname}" = HIDDEN_SERVICE.hostname
-<iframe src="https://www.youtube.com/embed/_bXyEqNH168" frameborder="0" allowfullscreen"></iframe>
-EOF
-end
-
+require './app'
 run Sinatra::Application
