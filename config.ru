@@ -14,13 +14,13 @@ get '/' do
       head
         title Heroku Hidden Service
       body
-        h1 Heroku Hidden Service
-        p
-          'This is a hidden service running on Heroku at 
+        h1 
+        
+          ' 
           a href="http://#{HIDDEN_SERVICE.hostname}" = HIDDEN_SERVICE.hostname
-        p
-          'Github: <iframe width="560" height="315" src="https://www.youtube.com/embed/_bXyEqNH168" frameborder="0" allowfullscreen></iframe>
-          a href="https://github.com/warrenguy/heroku-sinatra-hidden-service" warrenguy/heroku-sinatra-hidden-service
+        
+          '<iframe width="560" height="315" src="https://www.youtube.com/embed/_bXyEqNH168" frameborder="0" allowfullscreen></iframe>
+          a href="" 
 EOF
 end
 
