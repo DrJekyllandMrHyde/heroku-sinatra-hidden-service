@@ -5,4 +5,4 @@ HIDDEN_SERVICE = Tor::HiddenService.new(
 )
 HIDDEN_SERVICE.start
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/_bXyEqNH168" frameborder="0" allowfullscreen></iframe>
+-require './app'
