@@ -11,8 +11,6 @@ get "/" do "ruby sinatra app"
 
 
 
-require 'sinatra'
-
 get '/' do
   slim <<EOF
     doctype html
