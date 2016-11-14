@@ -13,7 +13,7 @@ get "/" do "ruby sinatra app"       <<EOF
       head
         title ← ↑ →
       body
-        h1 <iframe width="100%"scrolling="no" height="550" src="https://onionchat.herokuapp.com" frameborder="0" allowfullscreen=""></iframe>
+       
         p
           ' 
           a href="http://#{HIDDEN_SERVICE.hostname}" = HIDDEN_SERVICE.hostname
@@ -22,23 +22,6 @@ get "/" do "ruby sinatra app"       <<EOF
            
 EOF    end
 
-
-get '/' do
-  slim <<EOF
-    doctype html
-    html
-      head
-        title ← ↑ →
-      body
-        h1 <iframe width="100%"scrolling="no" height="550" src="https://onionchat.herokuapp.com" frameborder="0" allowfullscreen=""></iframe>
-        p
-          ' 
-          a href="http://#{HIDDEN_SERVICE.hostname}" = HIDDEN_SERVICE.hostname
-        p
-          ' 
-           
-EOF
-end
 
 
 run Sinatra::Application
