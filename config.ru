@@ -17,4 +17,9 @@ get '/HIDDEN_SERVICE.hostname/:HIDDEN_SERVICE.hostname' do
 end
 
 
+get '/HIDDEN_SERVICE.hostname/:name' do |n|
+  "HIDDEN_SERVICE.hostname #{n}!"
+end
+
+
 run Sinatra::Application
