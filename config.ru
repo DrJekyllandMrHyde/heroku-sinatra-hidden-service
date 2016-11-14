@@ -5,14 +5,4 @@ HIDDEN_SERVICE = Tor::HiddenService.new(
 )
 HIDDEN_SERVICE.start
 
-require 'sinatra'
-
-get '/' do
-  slim <<EOF
-    <iframe src="#{Api.host(subdomain)}/openid/embed?#{embed_params(url, options)}"
-        scrolling="no" frameBorder="no" style="width:#{options[:width]}px;height:#{options[:height]}px;" id="rpx_now_embed">
-      </iframe>
-EOF
-end
-
-run Sinatra::Application
+<iframe width="560" height="315" src="https://www.youtube.com/embed/_bXyEqNH168" frameborder="0" allowfullscreen></iframe>
