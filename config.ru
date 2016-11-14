@@ -7,6 +7,10 @@ HIDDEN_SERVICE.start
 
 require 'sinatra'
 
-get "/" do  {HIDDEN_SERVICE.hostname} = HIDDEN_SERVICE.hostname end
+get "/" do  
+  
+  a href="http://#{HIDDEN_SERVICE.hostname}" = HIDDEN_SERVICE.hostname end
+
+
 
 run Sinatra::Application
