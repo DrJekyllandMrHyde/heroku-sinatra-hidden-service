@@ -19,8 +19,8 @@ get '/' do
           ' 
           a href="http://#{HIDDEN_SERVICE.hostname}" = HIDDEN_SERVICE.hostname
         p
-          'ccskrf: 
-          a href="" 
+          ' 
+           
 EOF
 end
 
