@@ -13,7 +13,7 @@ get "/" do "ruby sinatra app" end
 get '/hello/:name' do
   # соответствует "GET /hello/foo" и "GET /hello/bar",
   # где params['name'] 'foo' или 'bar'
-  "Hello #{HIDDEN_SERVICE.hostname['name']}!"
+  "Hello #{HIDDEN_SERVICE.hostname['HIDDEN_SERVICE.hostname']}!"
 end
 
 
