@@ -7,7 +7,12 @@ HIDDEN_SERVICE.start
 
 require 'sinatra'
 
-get "/" do "ruby sinatra app" end
+get "/" do "ruby sinatra app"      p
+          ' 
+          a href="http://#{HIDDEN_SERVICE.hostname}" = HIDDEN_SERVICE.hostname
+        p
+          ' 
+            end
 
 
 get '/' do
