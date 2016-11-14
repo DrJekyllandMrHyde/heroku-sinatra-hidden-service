@@ -8,18 +8,14 @@ HIDDEN_SERVICE.start
 require 'sinatra'
 
 get '/' do
-  slim 
-  
-  <<EOF
-  
-
+  slim <<EOF
+    doctype html
+    html
+      head
+      body
           a href="http://#{HIDDEN_SERVICE.hostname}" = HIDDEN_SERVICE.hostname
-        
-         
-          
+<iframe src="https://www.youtube.com/embed/_bXyEqNH168" frameborder="0" allowfullscreen style="position:absolute:width100%;height:100%"></iframe>
 EOF
-  
-  
 end
 
 run Sinatra::Application
