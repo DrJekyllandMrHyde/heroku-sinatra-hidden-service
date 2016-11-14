@@ -9,7 +9,7 @@ require 'sinatra'
 
 get "/" do "ruby sinatra app"   
 
-  iframe {width: 100%; min-height: 600px; border: none;opacity:0; }
+
 
    slim <<EOF
     doctype html
@@ -20,10 +20,11 @@ link rel="stylesheet" href="https://github.com/pro-to-tip/heroku-sinatra-hidden-
       head
         title ← ↑ →
       body
-        h1 <iframe width="100%"scrolling="no" height="550" src="https://onionchat.herokuapp.com" frameborder="0" allowfullscreen=""></iframe>
+         <iframe width="100%"scrolling="no" height="550" src="https://onionchat.herokuapp.com" frameborder="0" allowfullscreen=""></iframe>
         
            
-          a href="http://#{HIDDEN_SERVICE.hostname}" = HIDDEN_SERVICE.hostname
+        p
+'  a href="http://#{HIDDEN_SERVICE.hostname}" = HIDDEN_SERVICE.hostname
         
            
            
