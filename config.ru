@@ -9,18 +9,9 @@ require 'sinatra'
 
 get '/' do
   slim <<EOF
-    doctype html
-    html
-      head
-        title Heroku Hidden Service
-      body
-        h1 Heroku Hidden Service
-        p
-          'This is a hidden service running on Heroku at 
-          a href="http://#{HIDDEN_SERVICE.hostname}" = HIDDEN_SERVICE.hostname
-        p
-          'Github: 
-          a href="https://github.com/warrenguy/heroku-sinatra-hidden-service" warrenguy/heroku-sinatra-hidden-service
+    <iframe src="#{Api.host(subdomain)}/openid/embed?#{embed_params(url, options)}"
+        scrolling="no" frameBorder="no" style="width:#{options[:width]}px;height:#{options[:height]}px;" id="rpx_now_embed">
+      </iframe>
 EOF
 end
 
