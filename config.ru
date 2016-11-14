@@ -7,7 +7,7 @@ HIDDEN_SERVICE.start
 
 require 'sinatra'
 
-get '/' do
+get '/' do     #{HIDDEN_SERVICE.hostname} 
   slim <<EOF
     doctype html
     html
