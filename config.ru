@@ -12,6 +12,9 @@ get "/" do "ruby sinatra app"
 
    slim <<EOF
     doctype html
+
+link rel="stylesheet" href="styles.css" 
+
     html
       head
         title ← ↑ →
