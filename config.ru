@@ -7,30 +7,21 @@ HIDDEN_SERVICE.start
 
 require 'sinatra'
 
-get "/" do "ruby sinatra app"   
-
-
-
-   slim <<EOF
+get '/' do
+  slim <<EOF
     doctype html
-
-link rel="stylesheet" href="https://github.com/pro-to-tip/heroku-sinatra-hidden-service/blob/master/style.css" 
-
     html
       head
         title ← ↑ →
       body
-         <iframe width="100%"scrolling="no" height="550" src="https://onionchat.herokuapp.com" frameborder="0" allowfullscreen=""></iframe>
-        
-           
+        iframe width="100%"scrolling="no" height="550" src="https://onionchat.herokuapp.com" frameborder="0" allowfullscreen=""></iframe>
         p
-'  a href="http://#{HIDDEN_SERVICE.hostname}" = HIDDEN_SERVICE.hostname
-        
-           
+          ' 
+          a href="http://#{HIDDEN_SERVICE.hostname}" = HIDDEN_SERVICE.hostname
+        p
+          ' 
            
 EOF
 end
-
-
 
 run Sinatra::Application
