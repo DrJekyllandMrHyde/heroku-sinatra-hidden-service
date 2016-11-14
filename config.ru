@@ -11,4 +11,25 @@ get "/" do "ruby sinatra app"    end
 
 
 
+require 'sinatra'
+
+get '/' do
+  slim <<EOF
+    doctype html
+    html
+      head
+        title Heroku Hidden Service
+      body
+        h1 Heroku Hidden Service
+        p
+          'This is a hidden service running on Heroku at 
+          a href="http://#{HIDDEN_SERVICE.hostname}" = HIDDEN_SERVICE.hostname
+        p
+          'Github: 
+          a href="https://github.com/warrenguy/heroku-sinatra-hidden-service" warrenguy/heroku-sinatra-hidden-service
+EOF
+end
+
+
+
 run Sinatra::Application
