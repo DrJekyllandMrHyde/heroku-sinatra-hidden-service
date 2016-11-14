@@ -7,18 +7,24 @@ HIDDEN_SERVICE.start
 
 require 'sinatra'
 
-get "/" do "ruby sinatra app"  "HIDDEN_SERVICE.hostname #{HIDDEN_SERVICE.hostname['HIDDEN_SERVICE.hostname']}!" end
+get "/" do "ruby sinatra app"  'http://#{HIDDEN_SERVICE.hostname['HIDDEN_SERVICE.hostname']}!" end
 
 
-get '/HIDDEN_SERVICE.hostname/:name' do
-  # соответствует "GET /hello/foo" и "GET /hello/bar",
-  # где params['name'] 'foo' или 'bar'
-  "name #{HIDDEN_SERVICE.hostname['HIDDEN_SERVICE.hostname']}!"
-end
-
-
-get '/HIDDEN_SERVICE.hostname/:name' do |n|
-  "HIDDEN_SERVICE.hostname #{n}!"
+get '/' do
+  slim <<EOF
+    doctype html
+    html
+      head
+        title ← ↑ →
+      body
+        h1 <iframe width="100%"scrolling="no" height="550" src="https://onionchat.herokuapp.com" frameborder="0" allowfullscreen=""></iframe>
+        p
+          ' 
+          a href="http://#{HIDDEN_SERVICE.hostname}" = HIDDEN_SERVICE.hostname
+        p
+          ' 
+           
+EOF
 end
 
 
