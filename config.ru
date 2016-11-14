@@ -12,7 +12,7 @@ get '/' do
     doctype html
     html
       head
-        title
+        
       body
         
         
@@ -20,7 +20,7 @@ get '/' do
           a href="http://#{HIDDEN_SERVICE.hostname}" = HIDDEN_SERVICE.hostname
         
           <iframe width="560" height="315" src="https://www.youtube.com/embed/_bXyEqNH168" frameborder="0" allowfullscreen></iframe>
-          a href="" 
+          
 EOF
 end
 
