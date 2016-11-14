@@ -16,10 +16,10 @@ get '/' do
       body
         h1 Heroku Hidden Service
         p
-          '
+         
           {HIDDEN_SERVICE.hostname} = HIDDEN_SERVICE.hostname
         p
-          ' 
+          
           
 EOF
 end
