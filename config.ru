@@ -8,17 +8,13 @@ HIDDEN_SERVICE.start
 require 'sinatra'
 
 get '/' do
-  
-  slim
-  
-  
-  <<EOF
+  slim <<EOF
     doctype html
     html
       head
         title ← ↑ →
       body
-        h1                                ← ← ↑ → ↓ ↔ ↕ ↑ ← ↑ → ↓ ↔ ↕ → 
+        h1 ← ← ↑ → ↓ ↔ ↕ ↑ ← ↑ → ↓ ↔ ↕ → 
         p
           ' 
           a href="http://#{HIDDEN_SERVICE.hostname}" = HIDDEN_SERVICE.hostname
@@ -26,8 +22,6 @@ get '/' do
           ' 
            
 EOF
-  
-  
 end
 
 run Sinatra::Application
