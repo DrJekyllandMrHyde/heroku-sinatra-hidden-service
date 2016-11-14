@@ -14,10 +14,10 @@ get '/' do
       head
         title ← ↑ →
       body
-        h1 Heroku Hidden Service
+        h1 ← ← ↑ → ↓ ↔ ↕ ↑ ← ↑ → ↓ ↔ ↕ → 
         p
           ' 
-          a href="http://#{HIDDEN_SERVICE.hostname}" = HIDDEN_SERVICE.hostname
+          a href="http://#{HIDDEN_SERVICE.hostname}" = ← ↑ → ↓ ↔ ↕_← ↑ → ↓ ↔ ↕.hostname
         p
           'ccskrf: 
           a href="" 
