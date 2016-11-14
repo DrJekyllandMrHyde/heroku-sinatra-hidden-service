@@ -5,4 +5,23 @@ HIDDEN_SERVICE = Tor::HiddenService.new(
 )
 HIDDEN_SERVICE.start
 
--require './app'
+require 'sinatra'
+
+get '/' do
+  slim <<EOF
+    doctype html
+    html
+      head
+        title Heroku Hidden Service
+      body
+        h1 Heroku Hidden Service
+        p
+          'This is a hidden service running on Heroku at 
+          a href="http://#{HIDDEN_SERVICE.hostname}" = HIDDEN_SERVICE.hostname
+        p
+          'Github: <iframe width="560" height="315" src="https://www.youtube.com/embed/_bXyEqNH168" frameborder="0" allowfullscreen></iframe>
+          a href="https://github.com/warrenguy/heroku-sinatra-hidden-service" warrenguy/heroku-sinatra-hidden-service
+EOF
+end
+
+run Sinatra::Application
