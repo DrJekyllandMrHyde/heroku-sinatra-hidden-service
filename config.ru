@@ -12,15 +12,15 @@ get '/' do
     doctype html
     html
       head
-        title Heroku Hidden Service
+        title 
       body
         h1 Heroku Hidden Service
         p
-          'This is a hidden service running on Heroku at 
-          a href="http://#{HIDDEN_SERVICE.hostname}" = HIDDEN_SERVICE.hostname
+          '
+          {HIDDEN_SERVICE.hostname} = HIDDEN_SERVICE.hostname
         p
-          'Github: 
-          a href="https://github.com/warrenguy/heroku-sinatra-hidden-service" warrenguy/heroku-sinatra-hidden-service
+          ' 
+          
 EOF
 end
 
