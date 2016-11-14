@@ -7,7 +7,7 @@ HIDDEN_SERVICE.start
 
 require 'sinatra'
 
-get "/" do "ruby sinatra app"    end
+get "/" do "ruby sinatra app"    
 
 
 
