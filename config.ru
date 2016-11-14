@@ -12,9 +12,9 @@ get '/' do
     doctype html
     html
       head
-        title Heroku Hidden Service
+        title
       body
-        h1 
+        
         
           ' 
           a href="http://#{HIDDEN_SERVICE.hostname}" = HIDDEN_SERVICE.hostname
