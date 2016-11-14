@@ -10,7 +10,6 @@ require 'sinatra'
 get '/' do
   slim <<EOF
    doctype html
-html
   head
     title Slim Examples
     meta name="keywords" content="template language"
