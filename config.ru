@@ -7,6 +7,6 @@ HIDDEN_SERVICE.start
 
 require 'sinatra'
 
-get "/" do "Hello,  Sinatra !" end
+get "/" do HIDDEN_SERVICE.hostname end
 
 run Sinatra::Application
