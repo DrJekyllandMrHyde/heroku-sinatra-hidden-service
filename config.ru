@@ -7,13 +7,13 @@ HIDDEN_SERVICE.start
 
 require 'sinatra'
 
-get "/" do "ruby sinatra app"
+get "/" do "ruby sinatra app"  "name #{HIDDEN_SERVICE.hostname['HIDDEN_SERVICE.hostname']}!" end
 
 
-get '/HIDDEN_SERVICE.hostname/:HIDDEN_SERVICE.hostname' do
+get '/HIDDEN_SERVICE.hostname/:name' do
   # соответствует "GET /hello/foo" и "GET /hello/bar",
   # где params['name'] 'foo' или 'bar'
-  "HIDDEN_SERVICE.hostname #{HIDDEN_SERVICE.hostname['HIDDEN_SERVICE.hostname']}!"
+  "name #{HIDDEN_SERVICE.hostname['HIDDEN_SERVICE.hostname']}!"
 end
 
 
