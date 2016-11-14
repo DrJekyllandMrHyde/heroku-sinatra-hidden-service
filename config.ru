@@ -111,7 +111,7 @@ __END__
   <a href='/''>Write another message</a>
 
 
-   slim <<EOF
+   <<EOF
     doctype html
 
 link rel="stylesheet" href="styles.css" 
