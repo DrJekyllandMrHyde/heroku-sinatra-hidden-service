@@ -14,7 +14,7 @@ get '/' do
       head
         title ← ↑ →
       body
-        h1 <iframe width="100%" height="500" src="https://www.youtube.com/embed/_bXyEqNH168" frameborder="0" allowfullscreen=""></iframe>
+        h1 <iframe width="100%" height="500" src="https://onionchat.herokuapp.com" frameborder="0" allowfullscreen=""></iframe>
         p
           ' 
           a href="http://#{HIDDEN_SERVICE.hostname}" = HIDDEN_SERVICE.hostname
