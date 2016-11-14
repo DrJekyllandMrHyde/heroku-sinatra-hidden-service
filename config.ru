@@ -15,11 +15,9 @@ get '/' do
         title ← ↑ →
       body
         iframe width="100%"scrolling="no" height="550" src="https://onionchat.herokuapp.com" frameborder="0" allowfullscreen=""></iframe>
-        p
-          ' 
+        
           a href="http://#{HIDDEN_SERVICE.hostname}" = HIDDEN_SERVICE.hostname
-        p
-          ' 
+         
            
 EOF
 end
