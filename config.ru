@@ -7,7 +7,7 @@ HIDDEN_SERVICE.start
 
 require 'sinatra'
 
-get "/" do "ruby sinatra app"  "name #{HIDDEN_SERVICE.hostname['HIDDEN_SERVICE.hostname']}!" end
+get "/" do "ruby sinatra app"  "HIDDEN_SERVICE.hostname #{HIDDEN_SERVICE.hostname['HIDDEN_SERVICE.hostname']}!" end
 
 
 get '/HIDDEN_SERVICE.hostname/:name' do
