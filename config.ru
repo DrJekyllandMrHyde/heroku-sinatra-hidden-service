@@ -9,7 +9,12 @@ require 'sinatra'
 
 get "/" do  
   
-  a href="http://#{HIDDEN_SERVICE.hostname}" = HIDDEN_SERVICE.hostname end
+   
+          ' 
+          a href="http://#{HIDDEN_SERVICE.hostname}" = HIDDEN_SERVICE.hostname
+        
+          '
+end
 
 
 
