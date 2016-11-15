@@ -14,7 +14,7 @@ get '/' do     #{HIDDEN_SERVICE.hostname}
       head
         title ← ↑ →
       body
-        iframe width="100%"scrolling="no" height="550" src="https://onionchat.herokuapp.com" frameborder="0" allowfullscreen
+        iframe frameborder="0" width="100%"scrolling="no" height="550" src="https://onionchat.herokuapp.com"
         
           #{HIDDEN_SERVICE.hostname}  
          
