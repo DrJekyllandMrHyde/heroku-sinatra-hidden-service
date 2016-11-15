@@ -22,6 +22,10 @@ get '/' do
          
            
 EOF
+  
+  erb: index
+  
+  
 end
 
 run Sinatra::Application
