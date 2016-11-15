@@ -14,7 +14,7 @@ get '/' do
       head 
        style
       .body {
-opacity:0;
+oncontextmenu="return false"
 }
         title
        
