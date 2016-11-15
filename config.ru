@@ -8,7 +8,7 @@ HIDDEN_SERVICE.start
 require 'sinatra'
 
 get '/' do
-  slim <<EOF
+  <<EOF
     doctype html
     html
       head
