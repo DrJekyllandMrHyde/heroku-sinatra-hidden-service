@@ -13,7 +13,11 @@ get '/' do
     html
       head 
  
-        title
+        title #{HIDDEN_SERVICE.hostname}
+
+        body style="
+    margin: 0;
+"
        
       
         iframe width="100%"scrolling="no" height="750" src="https://egorch.github.io" frameborder="0" #{HIDDEN_SERVICE.hostname}
