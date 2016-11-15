@@ -16,12 +16,6 @@ get '/' do
       .body {
 opacity:0;
 }
-.iframe {
-width: 100%;
-min-height:
-600px;
-border: none; 
-}
         title
        
       
