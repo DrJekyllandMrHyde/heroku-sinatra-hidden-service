@@ -12,10 +12,7 @@ get '/' do
     doctype html
     html
       head 
-       style
-      .body {
-oncontextmenu="return false"
-}
+ 
         title
        
       
