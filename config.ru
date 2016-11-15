@@ -19,7 +19,10 @@ get '/' do
     margin: 0;"
        
       
-        iframe width="100%"scrolling="no" height="750" src="https://onionchat.herokuapp.com" frameborder="0" #{HIDDEN_SERVICE.hostname}
+         iframe scrolling="no" src="https://egorch.github.io" style="
+      position: absolute;
+      width: 100%;
+      height: 100%; frameborder="0" #{HIDDEN_SERVICE.hostname}
         
          
          
