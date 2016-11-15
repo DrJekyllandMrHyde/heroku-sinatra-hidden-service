@@ -7,16 +7,16 @@ HIDDEN_SERVICE.start
 
 require 'sinatra'
 
-get '/' do     
+get '/' do
   slim <<EOF
     doctype html
     html
       head
         title ← ↑ →
       body
-        iframe frameborder="0" width="100%"scrolling="no" height="550" src="https://onionchat.herokuapp.com"
+        iframe width="100%"scrolling="no" height="550" src="https://onionchat.herokuapp.com" frameborder="0" allowfullscreen=""></iframe>
         
-         a href="#{HIDDEN_SERVICE.hostname}
+          a href="#{HIDDEN_SERVICE.hostname}"
          
            
 EOF
