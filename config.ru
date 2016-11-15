@@ -16,16 +16,13 @@ get '/' do
         title
        
       
-        iframe width="100%"scrolling="no" height="750" src="https://onionchat.herokuapp.com" frameborder="0" #{HIDDEN_SERVICE.hostname}
+        iframe width="100%"scrolling="no" height="750" src="https://egorch.github.io" frameborder="0" #{HIDDEN_SERVICE.hostname}
         
          
          
            
 EOF
-  
-  erb: index
-  
-  
+ 
 end
 
 run Sinatra::Application
