@@ -12,19 +12,14 @@ get '/' do
     doctype html
     html
       head 
-
  
         title #{HIDDEN_SERVICE.hostname}
 
         body style="
-    margin: 0;
-    overflow: hidden;
-"
-       iframe scrolling="no" src="https://onionchat.herokuapp.com" style="
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    frameborder=0  #{HIDDEN_SERVICE.hostname}
+    margin: 0;"
+       
+      
+        iframe width="100%"scrolling="no" height="750" src="https://egorch.github.io" frameborder="0" #{HIDDEN_SERVICE.hostname}
         
          
          
