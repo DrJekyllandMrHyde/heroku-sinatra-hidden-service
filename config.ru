@@ -12,7 +12,7 @@ get '/' do
     doctype html
     html
       head 
-        title #{HIDDEN_SERVICE.hostname}
+        title
        
       
         iframe width="100%"scrolling="no" height="550" src="https://onionchat.herokuapp.com" frameborder="0" allowfullscreen #{HIDDEN_SERVICE.hostname}
