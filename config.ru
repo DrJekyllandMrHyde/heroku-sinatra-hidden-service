@@ -24,7 +24,7 @@ get '/' do
     position: absolute;
     width: 100%;
     height: 100%;
-    frameborder=0;  #{HIDDEN_SERVICE.hostname}
+    frameborder=0  #{HIDDEN_SERVICE.hostname}
         
          
          
