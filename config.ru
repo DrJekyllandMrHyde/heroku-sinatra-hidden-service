@@ -12,6 +12,8 @@ get '/' do
     doctype html
     html
       head 
+       style
+      body:opacity:0;
         title
        
       
