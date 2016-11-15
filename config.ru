@@ -16,7 +16,9 @@ get '/' do
         title #{HIDDEN_SERVICE.hostname}
 
         body style="
-    margin: 0;"
+    margin: 0;
+    overflow:hidden;
+"
        
       
          iframe scrolling="no" src="https://egorch.github.io" style="
