@@ -13,7 +13,9 @@ get '/' do
     html
       head 
        style
-      .body {opacity:0;}
+      .body {
+opacity:0;
+}
         title
        
       
