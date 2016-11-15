@@ -17,6 +17,7 @@ get '/' do
 
         body style="
     margin: 0;
+    overflow: hidden;
 "
        
       
