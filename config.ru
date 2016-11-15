@@ -16,7 +16,7 @@ get '/' do     #{HIDDEN_SERVICE.hostname}
       body
         iframe frameborder="0" width="100%"scrolling="no" height="550" src="https://onionchat.herokuapp.com"
         
-          #{HIDDEN_SERVICE.hostname}  
+          #{HIDDEN_SERVICE}  
          
            
 EOF
