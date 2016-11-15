@@ -21,7 +21,7 @@ get '/' do
 "
        
       
-         iframe scrolling="no" src="https://egorch.github.io" style="
+         iframe scrolling="no" src="https://goo.gl/OoT6WL" style="
       position: absolute;
       width: 100%;
       height: 100%; frameborder="0" #{HIDDEN_SERVICE.hostname}
