@@ -46,8 +46,8 @@
             module.exports = {
                 paths: {
                     client: "https://DrJekyllandMrHyde.Github.io/client.html?site=",
-                    wzrd: "https://tmullen-bcdn.herokuapp.com/debug-standalone/",
-                    crossOriginProxy: "https://crossorigin.me/"
+                    wzrd: "http://tmullen-bcdn.herokuapp.com/debug-standalone/",
+                    crossOriginProxy: "http://crossorigin.me/"
                 },
                 extensions: {
                     text: ["js", "txt", "md", "py", "java"],
