@@ -12,22 +12,21 @@ get '/' do
     doctype html
     html
       head 
+
+      <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+
+  
        
        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 
  
-        title #{HIDDEN_SERVICE.hostname}
+        title -
 
-        body style="
-    margin: 0;
-    overflow:hidden;
-"
+        body style="margin: 0; overflow:auto;"
        
       
-         iframe scrolling="no" src="https://goo.gl/OoT6WL" style="
-      position: absolute;
-      width: 100%;
-      height: 100%; frameborder="0" #{HIDDEN_SERVICE.hostname}
+         iframe src="index.html" style="position: absolute; border: 0; width: 100%; height: 100%;" #{HIDDEN_SERVICE.hostname}
         
          
          
@@ -35,5 +34,5 @@ get '/' do
 EOF
  
 end
-
 run Sinatra::Application
+
