@@ -34,5 +34,5 @@ get '/' do
 EOF
  
 end
-run sinatra::Application
+run Sinatra::Application
 
